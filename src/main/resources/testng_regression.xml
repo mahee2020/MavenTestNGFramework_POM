@@ -5,7 +5,7 @@
 
 	<listeners>
 		<listener class-name="com.crm.qa.TestListeners.ExtentReportListener"/>
-		<!-- <listener class-name="com.crm.qa.RetryLogic.MyTransformer"/> -->
+		<<listener class-name="com.crm.qa.RetryLogic.MyTransformer"/> 
 	</listeners>
 	
 	<test name="Free CRM Application Test Cases">

@@ -2,13 +2,13 @@ package com.crm.qa.TestCases;
 
 import com.crm.qa.BaseClass.TestBase;
 
-public class Test {
+public class Test extends TestBase{
 
 	public static void main(String[] args) {
 
-		TestBase s= new TestBase();
-		 String a=s.property.getProperty("Browser");
-		 String a=s.System.getProperty("Browser");
+		//TestBase s= new TestBase();
+		 String a=property.getProperty("Browser");
+
 		 System.out.println(a);
 	}
 

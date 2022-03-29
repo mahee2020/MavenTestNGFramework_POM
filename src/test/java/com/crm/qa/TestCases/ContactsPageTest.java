@@ -19,13 +19,13 @@ public class ContactsPageTest extends TestBase
 	TestUtility testUtil;
 	ContactsPage contactsPage;
 	DealsPage dealsPage;
-	
-	String sheetName = "Contacts"; 
-	
-	public ContactsPageTest()
-	{
-		super();
-	}
+
+	String sheetName = "Contacts";
+
+//	public ContactsPageTest()
+//	{
+//		super();
+//	}
 
 	@BeforeMethod(alwaysRun=true)
 	public void setUp()
@@ -33,13 +33,13 @@ public class ContactsPageTest extends TestBase
 		initialization();
 		testUtil = new TestUtility();
 		Log.info("Application Launched Successfully");
-		
+
 		loginPage = new LoginPage();
 		contactsPage = new ContactsPage();
 		dealsPage = new DealsPage();
 		homePage = loginPage.login(property.getProperty("Username"),property.getProperty("Password"));
 	}
-	
+
 	@Test(priority=1, enabled=true)
 	public void verifyContactsPageLabelTest()
 	{
@@ -48,7 +48,7 @@ public class ContactsPageTest extends TestBase
 		Assert.assertTrue(contactsPage.verifyContactsLabel(), "Contacts Label is Missing in the Page");
 		Log.info("Verified Contacts Page Label");
 	}
-	
+
 	@Test(priority=2, enabled=true)
 	public void selectSingleContactsTest()
 	{
@@ -57,7 +57,7 @@ public class ContactsPageTest extends TestBase
 		contactsPage.selectContactByName("Ram Kumar");
 		Log.info("Verified Single Contacts");
 	}
-	
+
 	@Test(priority=3, enabled=true)
 	public void selectMultipleContactsTest()
 	{
@@ -67,14 +67,14 @@ public class ContactsPageTest extends TestBase
 		contactsPage.selectContactByName("Sanjay Kumar");
 		Log.info("Verified Multiple Contacts");
 	}
-	
+
 	@DataProvider
 	public Object[][] getCRMContactsTestData()
 	{
 		Object data [][] = TestUtility.getTestData(sheetName);
 		return data;
 	}
-	
+
 	@Test(priority=4, enabled=true, dataProvider="getCRMContactsTestData")
 	public void validateCreateNewContactTest(String Title, String FirstName, String LastName, String Company)
 	{

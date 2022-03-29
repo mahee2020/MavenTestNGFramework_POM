@@ -11,7 +11,7 @@
           <include name="selectMultipleContactsTest"/>
           <include name="setLog4j"/>
           <include name="tearDown"/>
-          <include name="validateCreateNewContactTest"/>
+          <include name="validateCreateNewContactTest" invocation-numbers="0 1 2"/>
           <include name="selectSingleContactsTest"/>
         </methods>
       </class> <!-- com.crm.qa.TestCases.ContactsPageTest -->

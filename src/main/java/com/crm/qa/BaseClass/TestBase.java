@@ -3,7 +3,6 @@ package com.crm.qa.BaseClass;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Collections;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -21,6 +20,8 @@ import org.testng.annotations.BeforeTest;
 import com.crm.qa.Constants.Constants;
 import com.crm.qa.Utilities.TestUtility;
 import com.crm.qa.Utilities.WebEventListener;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase
 {
@@ -63,11 +64,14 @@ public class TestBase
 		//String broswerName = System.getProperty("Browser");
 		if(broswerName.equals("Chrome"))
 		{
-			chromeOptions = new ChromeOptions();
-			chromeOptions.setExperimentalOption("useAutomationExtension", false);
-			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
-			System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
-			driver = new ChromeDriver(chromeOptions);
+//			chromeOptions = new ChromeOptions();
+//			chromeOptions.setExperimentalOption("useAutomationExtension", false);
+//			chromeOptions.setExperimentalOption("excludeSwitches", Collections.singletonList("enable-automation"));
+//			System.setProperty("webdriver.chrome.driver", Constants.CHROME_DRIVER_PATH);
+//			driver = new ChromeDriver(chromeOptions);c
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+
 		}
 		else if(broswerName.equals("IE"))
 		{

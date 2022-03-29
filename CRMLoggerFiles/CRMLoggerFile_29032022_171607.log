@@ -1,0 +1,11 @@
+2022-03-29 17:16:19,548  INFO [main] WebEventListener:26 - Application Launched Successfully
+2022-03-29 17:16:19,691  INFO [main] LoginPage:36 - Login Page Title Verified
+2022-03-29 17:16:20,594  INFO [main] LoginPage:115 - Browser Terminated
+2022-03-29 17:16:20,599  INFO [main] LoginPage:116 - -----------------------------------------------
+2022-03-29 17:16:29,761  INFO [main] WebEventListener:32 - Application Launched Successfully
+2022-03-29 17:16:38,108  INFO [main] HomePage:115 - Browser Terminated
+2022-03-29 17:16:38,110  INFO [main] HomePage:116 - -----------------------------------------------
+2022-03-29 17:16:53,612  INFO [main] WebEventListener:32 - Application Launched Successfully
+2022-03-29 17:17:03,017  INFO [main] HomePage:115 - Browser Terminated
+2022-03-29 17:17:03,018  INFO [main] HomePage:116 - -----------------------------------------------
+2022-03-29 17:17:12,866  INFO [main] WebEventListener:32 - Application Launched Successfully
