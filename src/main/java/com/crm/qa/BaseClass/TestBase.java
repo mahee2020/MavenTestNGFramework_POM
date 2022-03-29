@@ -24,43 +24,43 @@ import com.crm.qa.Utilities.WebEventListener;
 
 public class TestBase
 {
-	public static WebDriver driver; 
+	public static WebDriver driver;
 	public static Properties property;
 	public static ChromeOptions chromeOptions;
 	public static EventFiringWebDriver e_driver;
 	public static WebEventListener eventListener;
 	public static Logger Log;
-		
+
 	public TestBase()
 	{
 		Log = Logger.getLogger(this.getClass());
-		try 
+		try
 		{
 			property = new Properties();
 			FileInputStream inputStream = new FileInputStream(System.getProperty("user.dir") + "/src/main/java/com/crm/qa/Configuration/Configuration.properties");
 			property.load(inputStream);
-		} 
+		}
 		catch (FileNotFoundException e)
 		{
 			e.printStackTrace();
-		} 
-		catch (IOException e) 
+		}
+		catch (IOException e)
 		{
 			e.printStackTrace();
 		}
 	}
-	
+
 	@BeforeTest
 	public void setLog4j()
 	{
 		TestUtility.setDateForLog4j();
 	}
-	
+
 	public static void initialization()
 	{
-		//String broswerName = property.getProperty("Browser");
-		
-		String broswerName = System.getProperty("Browser");
+		String broswerName = property.getProperty("Browser");
+
+		//String broswerName = System.getProperty("Browser");
 		if(broswerName.equals("Chrome"))
 		{
 			chromeOptions = new ChromeOptions();
@@ -83,27 +83,27 @@ public class TestBase
 		{
 			System.out.println("Path of Driver Executable is not Set for any Browser");
 		}
-		
+
 		e_driver = new EventFiringWebDriver(driver);
-		
+
 		eventListener = new WebEventListener();
 		e_driver.register(eventListener);
 		driver = e_driver;
-		
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Constants.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		
+
 		driver.get(property.getProperty("Url"));
 	}
-	
+
 	@AfterTest
 	public void endReport()
 	{
-		
+
 	}
-	
+
 	@AfterMethod(alwaysRun=true)
 	public void tearDown() throws IOException
 	{
