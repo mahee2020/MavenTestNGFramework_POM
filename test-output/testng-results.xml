@@ -2,32 +2,32 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11907" started-at="2022-03-29T11:08:21Z" finished-at="2022-03-29T11:08:33Z">
+  <suite name="SuiteTest" duration-ms="25940" started-at="2022-03-29T13:52:29Z" finished-at="2022-03-29T13:52:55Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11907" started-at="2022-03-29T11:08:21Z" finished-at="2022-03-29T11:08:33Z">
+    <test name="Test" duration-ms="25940" started-at="2022-03-29T13:52:29Z" finished-at="2022-03-29T13:52:55Z">
       <class name="com.crm.qa.TestCases.LoginPageTest">
-        <test-method status="PASS" signature="setLog4j()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@63753b6d]" name="setLog4j" is-config="true" duration-ms="27" started-at="2022-03-29T16:38:21Z" finished-at="2022-03-29T16:38:21Z">
+        <test-method status="PASS" signature="setLog4j()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@6b09bb57]" name="setLog4j" is-config="true" duration-ms="24" started-at="2022-03-29T19:22:30Z" finished-at="2022-03-29T19:22:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setLog4j -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@63753b6d]" name="setUp" is-config="true" duration-ms="10908" started-at="2022-03-29T16:38:21Z" finished-at="2022-03-29T16:38:32Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@6b09bb57]" name="setUp" is-config="true" duration-ms="23905" started-at="2022-03-29T19:22:30Z" finished-at="2022-03-29T19:22:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.TestCases.LoginPageTest@63753b6d]" name="loginPageTitleTest" duration-ms="42" started-at="2022-03-29T16:38:32Z" finished-at="2022-03-29T16:38:32Z">
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.crm.qa.TestCases.LoginPageTest@6b09bb57]" name="loginPageTitleTest" duration-ms="87" started-at="2022-03-29T19:22:54Z" finished-at="2022-03-29T19:22:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginPageTitleTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@63753b6d]" name="tearDown" is-config="true" duration-ms="882" started-at="2022-03-29T16:38:32Z" finished-at="2022-03-29T16:38:33Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@6b09bb57]" name="tearDown" is-config="true" duration-ms="1058" started-at="2022-03-29T19:22:54Z" finished-at="2022-03-29T19:22:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@63753b6d]" name="endReport" is-config="true" duration-ms="0" started-at="2022-03-29T16:38:33Z" finished-at="2022-03-29T16:38:33Z">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.crm.qa.TestCases.LoginPageTest@6b09bb57]" name="endReport" is-config="true" duration-ms="0" started-at="2022-03-29T19:22:55Z" finished-at="2022-03-29T19:22:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.crm.qa.TestCases.LoginPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- SuiteTest -->
 </testng-results>
